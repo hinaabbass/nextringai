@@ -11,6 +11,8 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
+import Link from "next/link";
+import Image from "next/image";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -46,30 +48,18 @@ const Navbar = () => {
       <div className="mx-auto flex w-full max-w-7xl items-center justify-center px-4">
         <div className="relative flex w-full max-w-[1300px] items-center justify-between gap-4 rounded-[50px] border border-white/10 bg-black px-6 py-4 shadow-[0_4px_20px_rgba(0,0,0,0.15)]">
           {/* LOGO */}
-          <a href="#" className="flex items-center gap-3">
-            <svg
-              width="32"
-              height="32"
-              viewBox="0 0 36 36"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              className="shrink-0"
-            >
-              <path
-                d="M18 4L28 12.5V23.5L18 32L8 23.5V12.5L18 4Z"
-                fill="#4CAF50"
-              />
-              <path
-                d="M18 8.5L24.75 13.75V22.25L18 27.5L11.25 22.25V13.75L18 8.5Z"
-                fill="#87C56D"
-              />
-              <path
-                d="M18 11L21.75 13.75L18 16.5L14.25 13.75L18 11Z"
-                fill="white"
-              />
-            </svg>
-            <span className="text-sm font-medium text-white">NextRing AI</span>
-          </a>
+         <Link href="/" className="flex items-center gap-3">
+  <Image
+    src="/logo.png"
+    alt="NextRing AI Logo"
+    width={32}
+    height={32}
+    priority
+  />
+  <span className="text-lg font-medium text-white">
+    NextRing AI
+  </span>
+</Link>
 
           {/* DESKTOP NAV */}
           <nav className="hidden flex-1 items-center justify-center gap-10 text-sm font-medium md:flex">

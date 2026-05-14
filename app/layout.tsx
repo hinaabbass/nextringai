@@ -47,7 +47,9 @@ export const metadata: Metadata = {
   creator: "NextRing AI",
   publisher: "NextRing AI",
   icons: {
-    icon: "/public/favicon.png",
+    icon: "/favicon.png",
+    shortcut: "/favicon.png",
+    apple: "/favicon.png",
   },
 };
 
