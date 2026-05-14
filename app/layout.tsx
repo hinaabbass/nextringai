@@ -30,8 +30,25 @@ const bricolageGrotesque = Bricolage_Grotesque({
 });
 
 export const metadata: Metadata = {
-  title: "NextRing AIAI",
-  description: "AI-powered platform with animations and icons",
+  title: "NextRing AI — AI Receptionist for Roofing Contractors",
+  description:
+    "Stop losing roofing jobs from missed calls. NextRing AI answers 24/7, books appointments, follows up leads, and helps UK roofers close more jobs automatically.",
+  keywords: [
+    "AI receptionist",
+    "roofing leads",
+    "roofing contractor software",
+    "AI call answering",
+    "roofing business automation",
+    "roofing appointment booking",
+    "roofing CRM",
+    "NextRing AI",
+  ],
+  authors: [{ name: "NextRing AI" }],
+  creator: "NextRing AI",
+  publisher: "NextRing AI",
+  icons: {
+    icon: "/public/favicon.png",
+  },
 };
 
 export default function RootLayout({
