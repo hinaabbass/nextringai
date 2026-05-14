@@ -6,25 +6,25 @@ const faqs = [
   {
     question: "Will my customers know they're talking to an AI?",
     answer:
-      "Most won't. NextRing AI sounds natural, uses your business name, and handles the call the way a good receptionist would. It doesn't say 'I am an AI' and it doesn't sound like a recorded message. If someone asks directly whether they're speaking to a person, it's honest about it. In practice this almost never happens — homeowners care about getting a proper response, not who's giving it.",
+      "Most won't. NextRing AI sounds natural, uses your business name, and handles the call the way a good receptionist would. It doesn't say 'I am an AI' and it doesn't sound like a recorded message. If someone asks directly whether they're speaking to a person, it's honest about it. In practice this almost never happens homeowners care about getting a proper response, not who's giving it.",
   },
 
   {
     question: "Does it replace my current phone number?",
     answer:
-      "No. Nothing changes about your existing phone setup. NextRing AI only steps in when you don't answer. Your phone rings as normal. If you pick up, NextRing AI stays silent. It's a safety net for the calls you miss — not a replacement for the ones you take.",
+      "No. Nothing changes about your existing phone setup. NextRing AI only steps in when you don't answer. Your phone rings as normal. If you pick up, NextRing AI stays silent. It's a safety net for the calls you miss not a replacement for the ones you take.",
   },
 
   {
     question: "How long does setup take?",
     answer:
-      "Most contractors are live within 5 to 7 days. You fill in a short questionnaire about your business — takes around 20 minutes on your phone. We build everything else. The only other thing you do is dial a short code to forward your unanswered calls. That takes 2 minutes and we send you exactly what to type.",
+      "Most contractors are live within 5 to 7 days. You fill in a short questionnaire about your business takes around 20 minutes on your phone. We build everything else. The only other thing you do is dial a short code to forward your unanswered calls. That takes 2 minutes and we send you exactly what to type.",
   },
 
   {
     question: "What happens if it gets asked something it doesn't know?",
     answer:
-      "It takes a clear message — the caller's name, number, what they need — and sends it to you immediately. You follow up personally. This rarely happens because we train NextRing AI specifically on your business before going live. It knows your services, your areas, and how you like to work.",
+      "It takes a clear message the caller's name, number, what they need and sends it to you immediately. You follow up personally. This rarely happens because we train NextRing AI specifically on your business before going live. It knows your services, your areas, and how you like to work.",
   },
 
   {
@@ -40,15 +40,15 @@ const faqs = [
   },
 
   {
-    question: "What if a caller has an emergency — like an active leak?",
+    question: "What if a caller has an emergency like an active leak?",
     answer:
-      "NextRing AI listens for emergency keywords during every call. If a homeowner mentions an active leak, storm damage, or anything urgent, it flags the call immediately and sends you a priority alert on your phone — separate from your regular notifications. You see it straight away and can call back within minutes.",
+      "NextRing AI listens for emergency keywords during every call. If a homeowner mentions an active leak, storm damage, or anything urgent, it flags the call immediately and sends you a priority alert on your phone separate from your regular notifications. You see it straight away and can call back within minutes.",
   },
 
   {
     question: "Can I cancel if it's not working for me?",
     answer:
-      "Yes. 30 days notice and that's it. No penalty, no awkward conversations. We're confident you'll see results quickly — most contractors capture their first recovered lead within the first week — but we don't lock anyone in.",
+      "Yes. 30 days notice and that's it. No penalty, no awkward conversations. We're confident you'll see results quickly most contractors capture their first recovered lead within the first week but we don't lock anyone in.",
   },
 ];
 

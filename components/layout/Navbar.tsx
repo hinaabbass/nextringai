@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import {
   Sheet,
@@ -14,11 +14,38 @@ import { Menu } from "lucide-react";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [showNav, setShowNav] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  // Scroll direction logic
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScroll = window.scrollY;
+
+      if (currentScroll > lastScrollY && currentScroll > 80) {
+        // scrolling down → hide navbar
+        setShowNav(false);
+      } else {
+        // scrolling up → show navbar
+        setShowNav(true);
+      }
+
+      setLastScrollY(currentScroll);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [lastScrollY]);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 py-4">
+    <header
+      className={`fixed left-0 right-0 z-50 py-4 transition-transform duration-300 ${
+        showNav ? "translate-y-0" : "-translate-y-full"
+      }`}
+    >
       <div className="mx-auto flex w-full max-w-7xl items-center justify-center px-4">
         <div className="relative flex w-full max-w-[1300px] items-center justify-between gap-4 rounded-[50px] border border-white/10 bg-black px-6 py-4 shadow-[0_4px_20px_rgba(0,0,0,0.15)]">
+          {/* LOGO */}
           <a href="#" className="flex items-center gap-3">
             <svg
               width="32"
@@ -44,6 +71,7 @@ const Navbar = () => {
             <span className="text-sm font-medium text-white">NextRing AI</span>
           </a>
 
+          {/* DESKTOP NAV */}
           <nav className="hidden flex-1 items-center justify-center gap-10 text-sm font-medium md:flex">
             {[
               { label: "How It Works", href: "#how-it-works" },
@@ -61,6 +89,7 @@ const Navbar = () => {
             ))}
           </nav>
 
+          {/* RIGHT SIDE BUTTONS */}
           <div className="flex items-center gap-3">
             <Button
               asChild
@@ -75,6 +104,7 @@ const Navbar = () => {
               </a>
             </Button>
 
+            {/* MOBILE MENU */}
             <div className="md:hidden">
               <Sheet open={isOpen} onOpenChange={setIsOpen}>
                 <SheetTrigger asChild>
@@ -86,20 +116,20 @@ const Navbar = () => {
                     <Menu className="h-4 w-4" />
                   </Button>
                 </SheetTrigger>
+
                 <SheetContent
                   side="top"
                   className="w-full max-w-none bg-black text-white"
                 >
                   <SheetHeader>
-                    <SheetTitle className="text-white">Menu</SheetTitle>
-                    <SheetDescription className="text-gray-300">
-                      Navigate through our site
-                    </SheetDescription>
+                    <SheetTitle className="text-white">NextRing AI</SheetTitle>
+                    <SheetDescription className="text-gray-300"></SheetDescription>
                   </SheetHeader>
-                  <nav className="flex flex-col gap-4 mt-6">
+
+                  <nav className="flex flex-col gap-4 pb-8 px-8">
                     {[
-                      { label: "Features", href: "#features" },
                       { label: "How It Works", href: "#how-it-works" },
+                      { label: "Features", href: "#features" },
                       { label: "Pricing", href: "#pricing" },
                       { label: "FAQ", href: "#faq" },
                     ].map((item) => (
@@ -112,12 +142,15 @@ const Navbar = () => {
                         {item.label}
                       </a>
                     ))}
+
                     <Button
                       asChild
                       className="mt-4 rounded-full bg-[var(--color-accent-primary)] text-white transition-colors duration-200 hover:!bg-white hover:!text-black hover:border hover:border-black"
                     >
                       <a
                         href="https://calendar.app.google/Dr971PjDDg6un7nR7"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         onClick={() => setIsOpen(false)}
                       >
                         Book a Demo

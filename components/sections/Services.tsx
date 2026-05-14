@@ -17,7 +17,7 @@ const services = [
     iconBg: "bg-emerald-50",
     title: "24/7 AI Call Answering System",
     subtitle: "Answers every call in your business name",
-    body: "When you miss a call after 2 rings, NextRing AI automatically takes over the call in your business name, speaks naturally with homeowners, and captures every enquiry professionally — day or night.",
+    body: "When you miss a call after 2 rings, NextRing AI automatically takes over the call in your business name, speaks naturally with homeowners, and captures every enquiry professionally day or night.",
     bullets: [
       "AI answers after 2 missed rings",
       "Captures caller details and job information",
@@ -107,7 +107,7 @@ const services = [
 const Services = () => {
   return (
     <section
-      className="w-full bg-color-background-soft px-8 py-16"
+      className="w-full bg-color-background-soft px-4 py-16 sm:px-8"
       id="features"
     >
       <div className="mx-auto max-w-7xl">
@@ -133,12 +133,12 @@ const Services = () => {
           {services.map((feature, index) => (
             <div
               key={index}
-              className="flex flex-col rounded-[20px] border border-gray-200 bg-white p-9 transition-all duration-200 hover:-translate-y-1 hover:shadow-xl"
+              className="flex flex-col rounded-[20px] border border-gray-200 bg-white p-6 sm:p-9 transition-all duration-200 hover:-translate-y-1 hover:shadow-xl"
             >
               {/* Icon */}
               <div
-                className={`mb-5 flex items-center justify-center rounded-[14px] ${feature.iconBg}`}
-                style={{ width: 54, height: 54 }}
+                className={`mb-5 flex items-center justify-center rounded-[14px] ${feature.iconBg}
+    w-[44px] h-[44px] sm:w-[54px] sm:h-[54px]`}
               >
                 {feature.icon}
               </div>

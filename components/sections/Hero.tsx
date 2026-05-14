@@ -13,7 +13,7 @@ const Hero = () => {
             <div className="inline-flex items-center gap-2 rounded-full bg-gray-200 px-4 py-2">
               <ShieldCheck className="h-4 w-4 text-gray-800" />
 
-              <p className="text-xs font-semibold uppercase tracking-[0.28em] text-gray-800">
+              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-gray-800 sm:tracking-[0.28em]">
                 Built for Roofing Contractors
               </p>
             </div>
