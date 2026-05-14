@@ -66,7 +66,7 @@ export default function SocialProof() {
                 </h3>
 
                 <p className="mt-1 text-[14px] text-[#6b7280] md:text-[16px]">
-                  Owner · Morrison Roofing — Dallas, TX
+                  Owner · Morrison Roofing
                 </p>
               </div>
             </div>
