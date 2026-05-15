@@ -6,7 +6,7 @@ const stats = [
     label: "more inspections booked",
   },
   {
-    value: "$47K",
+    value: "€47K",
     label: "Additional revenue",
   },
   {

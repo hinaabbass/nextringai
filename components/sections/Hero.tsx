@@ -77,7 +77,7 @@ const Hero = () => {
                 </p>
 
                 <p className="mt-2 text-2xl font-semibold text-slate-900">
-                  $234.98K
+                  €234.98K
                 </p>
 
                 <div className="mt-3 flex items-center gap-2">
@@ -100,7 +100,7 @@ const Hero = () => {
                 </p>
 
                 <p className="mt-2 text-2xl font-semibold text-slate-900">
-                  $6,226
+                  €6,226
                 </p>
               </div>
             </div>

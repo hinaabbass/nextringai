@@ -9,8 +9,8 @@ const plans = [
     description: "Stop losing roofing jobs from missed calls.",
     subDescription:
       "Perfect for solo roofers and small teams who need a reliable AI receptionist to capture leads and respond instantly.",
-    price: "$247",
-    setup: "$490 one-off setup",
+    price: "€247",
+    setup: "€490 one-off setup",
     active: false,
   },
   {
@@ -18,8 +18,8 @@ const plans = [
     description: "Turn your roofing business into an automated sales system.",
     subDescription:
       "Built for growing roofing companies that want to recover more leads, automate follow-ups, and book more jobs.",
-    price: "$397",
-    setup: "$590 one-off setup",
+    price: "€397",
+    setup: "€590 one-off setup",
     active: true,
   },
 ];

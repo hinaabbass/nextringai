@@ -32,7 +32,7 @@ const bricolageGrotesque = Bricolage_Grotesque({
 export const metadata: Metadata = {
   title: "NextRing AI — AI Receptionist for Roofing Contractors",
   description:
-    "Stop losing roofing jobs from missed calls. NextRing AI answers 24/7, books appointments, follows up leads, and helps roofing contractors close more jobs automatically.",
+    "Stop losing roofing jobs from missed calls. NextRing AI answers 24/7, books appointments, follows up leads, and helps UK roofers close more jobs automatically.",
   keywords: [
     "AI receptionist",
     "roofing leads",
