@@ -56,10 +56,10 @@ export default function Footer() {
             <p className="mt-5 text-[15px] text-[#6b7280]">Got a question?</p>
 
             <a
-              href="mailto:hello@nextringai.com"
+              href="tel:+447988599486"
               className="mt-2 block text-[18px] font-medium tracking-[-0.03em] text-[#87c56d]"
             >
-              hello@nextringai.com
+              +44 7988599486
             </a>
 
             <Link
