@@ -10,11 +10,11 @@ const plans = [
     subDescription:
       "Perfect for solo roofers and small teams who need a reliable AI receptionist to capture leads and respond instantly.",
 
-    price: "€247",
+    price: "$247",
 
     usage: [
       "150 AI call minutes included monthly",
-      "Additional AI usage billed at £0.35/min",
+      "Additional AI usage billed at $0.35/min",
     ],
 
     badge: "BEST FOR SMALL TEAMS",
@@ -39,11 +39,11 @@ const plans = [
     subDescription:
       "Built for growing roofing companies that want to recover more leads, automate follow-ups, and book more jobs.",
 
-    price: "€397",
+    price: "$397",
 
     usage: [
       "400 AI call minutes included monthly",
-      "Lower additional usage at £0.25/min",
+      "Lower additional usage at $0.25/min",
     ],
 
     badge: "MOST POPULAR",

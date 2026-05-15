@@ -23,7 +23,7 @@ export default function Footer() {
             </h2>
 
             <p className="mt-4 max-w-[260px] text-[14px] leading-[1.7] text-[#6b7280]">
-              AI receptionist built for UK roofing contractors.
+              AI receptionist built for roofing contractors.
             </p>
           </div>
 
@@ -79,7 +79,7 @@ export default function Footer() {
           </p>
 
           <p className="text-[13px] text-[#6b7280]">
-            Built for UK Roofing Contractors
+            Built for Roofing Contractors
           </p>
         </div>
       </div>

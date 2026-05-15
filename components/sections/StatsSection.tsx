@@ -1,7 +1,7 @@
 const stats = [
   {
     value: "47%",
-    title: "UK trade calls go unanswered",
+    title: "trade calls go unanswered",
     description: "Every missed call is a job you never knew about",
   },
   {
@@ -15,8 +15,8 @@ const stats = [
     description: "Every time, without fail, day or night",
   },
   {
-    value: "£6,226",
-    title: "Average value of a UK roofing job",
+    value: "$6,226",
+    title: "Average value of a roofing job",
     description: "One missed call. One lost job. Every single day.",
   },
 ];
